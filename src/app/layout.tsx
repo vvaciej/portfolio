@@ -15,7 +15,7 @@ export default function RootLayout({
 				<meta name='theme-color' content='#00b894' />
 				<meta property='og:image' content='/next.svg' />
 				<meta
-					name='keywords'
+					name="keywords"
 					content='vvaciej, maciek skokowski, maciej skokowski, skokowski, vvaciej portfolio, maciek portfolio, maciej portfolio, skokowski portfolio, frontend developer, klepacz kodu'
 				/>
 				<meta
