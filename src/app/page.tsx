@@ -17,7 +17,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className='landscape bg-bg-img w-full h-full z-[-1] object-cover brightness-[0.25] fixed top-12 scale-[115%] landscape:top-0 landscape:scale-100'></div>
+			<div className='landscape bg-bg-img w-full h-full z-[-1] object-cover brightness-[0.25] fixed top-12 scale-[115%]'></div>
 			<div className='w-full h-max flex justify-center overflow-hidden'>
 				<div
 					className={`sm:w-[32rem] w-[91%] h-max flex flex-col mt-12 sm:mt-20 relative transition-all pb-24 ${
@@ -31,7 +31,7 @@ export default function Home() {
 						<h1 className='text-zinc-100 leading-10 tracking-wide font-bold w-max inline-block'>Hey, I&apos;m&nbsp;</h1>
 						<div className='text-zinc-100 leading-10 tracking-wide font-semibold w-max relative inline'>
 							<h1 className='inline relative z-10 w-[9.8rem]'>Maciek</h1>
-							<section>
+							<section className='hide-for-landscapes'>
 								<div className="after:content-[''] after:h-3 after:w-[110%] after:bg-blue-purple-mix after:absolute after:left-[-9px] after:top-9 after:z-[-1]"></div>
 								<div className="after:content-[''] after:h-full after:w-2 after:bg-[#050505] after:z-0 after:absolute after:left-[-9px] after:top-0 after:rotate-[9deg]"></div>
 								<div className="after:content-[''] after:h-full after:w-2 after:bg-[#050505] after:z-0 after:absolute after:right-[-13.5px] after:top-0 after:rotate-[9deg]"></div>
@@ -116,7 +116,7 @@ export default function Home() {
 								<div
 									className='min-h-32 max-h-32 p-6 py-5 w-full bg-gray-46 rounded-lg cursor-pointer flex items-center flex-col gap-y-3 justify-center hover:brightness-75 transition-all'
 									key={index}>
-									<img src={skill.source} alt="image for one of language skill" className='h-10' />
+									<img src={skill.source} alt='image for one of language skill' className='h-10' />
 									<h2 className='text-sm text-white font-medium text-center'>{skill.name}</h2>
 								</div>
 							))}
