@@ -116,7 +116,7 @@ export default function Home() {
 								<div
 									className='min-h-32 max-h-32 p-6 py-5 w-full bg-gray-46 rounded-lg cursor-pointer flex items-center flex-col gap-y-3 justify-center hover:brightness-75 transition-all'
 									key={index}>
-									<img src={skill.source} alt='image for one of language skill' className='h-10' />
+									<img src={skill.source} alt="image for one of language skill" className='h-10' />
 									<h2 className='text-sm text-white font-medium text-center'>{skill.name}</h2>
 								</div>
 							))}
