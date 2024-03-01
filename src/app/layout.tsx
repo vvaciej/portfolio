@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-		<html lang='en'>
+		<html lang='en' className="bg-[#050505]">
 			<head>
 				<title>Portfolio | Maciek Skokowski</title>
 				<meta name='theme-color' content='#00b894' />

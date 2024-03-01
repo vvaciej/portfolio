@@ -17,7 +17,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className='bg-bg-img w-full h-full z-[-1] object-cover brightness-[0.25] fixed top-12 scale-[115%]'></div>
+			<div className='landscape bg-bg-img w-full h-full z-[-1] object-cover brightness-[0.25] fixed top-12 scale-[115%]'></div>
 			<div className='w-full h-max flex justify-center overflow-hidden'>
 				<div
 					className={`sm:w-[32rem] w-[91%] h-max flex flex-col mt-12 sm:mt-20 relative transition-all pb-24 ${
