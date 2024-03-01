@@ -21,7 +21,7 @@ export default function Home() {
 			<div className='w-full h-max flex justify-center overflow-hidden'>
 				<div
 					className={`sm:w-[32rem] w-[91%] h-max flex flex-col mt-12 sm:mt-20 relative transition-all pb-24 ${
-						isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-[1rem] opacity-0'
+						isLoaded ? 'left-0 opacity-100' : 'left-[-500px] opacity-0'
 					}`}>
 					<section className='mb-3 flex items-center gap-x-2'>
 						<FontAwesomeIcon icon={faCircle} className='h-2 text-green' />
