@@ -12,10 +12,13 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'pink-gradient': 'linear-gradient(to right, #AF7AF1, #CA2D6B)',
+				'bg-img': 'url("/images/bg-img.png")',
 			},
 			colors: {
 				'bg-main': '#151515',
 				green: '#00b894',
+				btns: '#2E2E34',
+				'blue-purple-mix': '#5B62DE',
 			},
 		},
 	},
