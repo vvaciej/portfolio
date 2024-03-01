@@ -21,6 +21,9 @@ const config: Config = {
 				'blue-purple-mix': '#5B62DE',
 				'gray-46': '#2E2E34',
 			},
+			screens: {
+				landscape: { raw: '(orientation: landscape)' },
+			},
 		},
 	},
 	plugins: [],
