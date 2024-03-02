@@ -2,14 +2,14 @@
 
 import { faCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord, faGithub, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import skillsImagesArr from '../data/skills-data.js';
+import projects from '../data/projects-data';
 
 export default function Home() {
 	const [isLoaded, setLoaded] = useState<boolean>(false);
-	const [hoveringFilmsPlayer, setHoveringFilmsPlayer] = useState<boolean>(false);
 
 	useEffect(() => {
 		setLoaded(true);
@@ -79,34 +79,27 @@ export default function Home() {
 					</div>
 					<div className='text-white border-b-[1px] border-zinc-600 pb-8'>
 						<h1 className='text-2xl mt-5 font-medium'>Projects</h1>
-						<section className='mt-4 grid sm:grid-cols-2'>
-							<a
-								href='https://www.vvaciej.codes'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='p-6 py-5 w-full bg-gray-46 rounded-lg cursor-pointer'
-								onMouseOver={() => setHoveringFilmsPlayer(true)}
-								onMouseLeave={() => setHoveringFilmsPlayer(false)}>
-								<section className='flex w-full justify-between'>
-									<h1 className='font-medium text-[16.8px]'>Films Player</h1>
-									<ArrowUpRightIcon className={`${hoveringFilmsPlayer ? 'block' : 'hidden'} h-5`} />
-								</section>
-								<p className='mt-1 text-[14px] text-zinc-400 leading-6'>
-									First bigger project, website is designed to watch popular films fully for free also there&apos;s
-									opportunity to login by test email and password.
-								</p>
-								<section className='flex items-center gap-x-2 mt-4'>
-									<img src='/icons/icons8-sass-50.png' className='h-5' alt='icon for sass' />
-									<img
-										src='https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png'
-										className='h-5'
-										alt='icon for nextjs'
-									/>
-									<img src='/icons/icons8-typescript-50.png' className='h-5' alt='icon for typescript' />
-									<img src='/icons/icons8-tailwindcss-48.png' className='h-5' alt='icon for tailwindcss' />
-									<img src='/icons/icons8-api-50.png' className='h-5' alt='icon for api' />
-								</section>
-							</a>
+						<section className='mt-4 grid sm:grid-cols-2 gap-x-3'>
+							{projects.map((project: any, index: number) => (
+								<>
+									<a key={index}
+										href={project.link}
+										target='_blank'
+										rel='noopener noreferrer'
+										className='project-container p-6 py-5 w-full bg-gray-46 rounded-lg cursor-pointer'>
+										<section className='flex w-full justify-between'>
+											<h1 className='font-medium text-[16.8px]'>{project.name}</h1>
+											<ArrowUpRightIcon className={`h-5 project-container-hovering-arrow hidden`} />
+										</section>
+										<p className='mt-1 text-[14px] text-zinc-400 leading-6'>{project.description}</p>
+										<section className='flex items-center gap-x-2 mt-4'>
+											{project.tech.map((tech: string, index: number) => (
+												<img key={index} src={tech} className='h-5' alt={`icon for one of tech used`} />
+											))}
+										</section>
+									</a>
+								</>
+							))}
 						</section>
 					</div>
 					<div>
