@@ -17,7 +17,7 @@ const projects = [
 		link: 'https://www.calculator-vvaciej.software/',
 		description: 'Modern calculator that can be used by keyboard and mouse either. Themes are switchable by preference. Project created to learn React',
 		tech: [
-			'/icons/icons8-typescript-50.png',
+			'/icons/icons8-javascript-50.png',
 			'/icons/icons8-react-50.png',
 			'/icons/icons8-tailwindcss-48.png',
 			'/icons/icons8-sass-50.png',

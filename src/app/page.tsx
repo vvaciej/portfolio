@@ -79,7 +79,7 @@ export default function Home() {
 					</div>
 					<div className='text-white border-b-[1px] border-zinc-600 pb-8'>
 						<h1 className='text-2xl mt-5 font-medium'>Projects</h1>
-						<section className='mt-4 grid sm:grid-cols-2 gap-x-3'>
+						<section className='mt-4 grid sm:grid-cols-2 gap-3'>
 							{projects.map((project: any, index: number) => (
 								<>
 									<a key={index}
